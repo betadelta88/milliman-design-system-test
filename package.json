@@ -7,7 +7,7 @@
   "repository": "myURL.com",
   "bugs": "myIssuesURL",
   "publishConfig": {
-    "access": "public"
+    "registry":"https://npm.pkg.github.com"
   },
   "scripts": {
     "compile-sass": "node-sass src/themes/white/scss/index.scss src/themes/white/css/white.css --include-path node_modules/ --source-map src/themes/white/css/white.css.map",
