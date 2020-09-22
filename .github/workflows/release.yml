@@ -22,7 +22,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-   publish-gpr:
+  publish-gpr:
     needs: build
     runs-on: ubuntu-latest
     steps:
