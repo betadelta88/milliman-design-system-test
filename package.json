@@ -4,8 +4,6 @@
   "version": "0.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "repository": "myURL.com",
-  "bugs": "myIssuesURL",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
   },
