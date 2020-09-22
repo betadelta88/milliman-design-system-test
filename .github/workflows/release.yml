@@ -33,7 +33,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@MJordanMilliman'
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
-      - run: git fetch --prune --unshallow --tags
+      - run: git fetch --tags -f
       - run: npm config set git-tag-version false
       - run: npm version from-git
       - run: npm publish
