@@ -1,5 +1,5 @@
 {
-  "name": "@MJordanMilliman/milliman-design-system-test",
+  "name": "@mjordanmilliman/milliman-design-system-test",
   "description": "Themes for applying color in the Carbon Design System",
   "version": "0.0.0",
   "main": "lib/index.js",
