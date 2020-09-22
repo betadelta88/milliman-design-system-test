@@ -1,0 +1,23 @@
+{
+  "name": "millimanDesignSystem",
+  "description": "Themes for applying color in the Carbon Design System",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": "myURL.com",
+  "bugs": "myIssuesURL",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "compile-sass": "node-sass src/themes/white/scss/index.scss src/themes/white/css/white.css --include-path node_modules/ --source-map src/themes/white/css/white.css.map",
+    "minify-css": "csso src/themes/white/css/white.css --output src/themes/white/css/white.min.css --input-source-map src/themes/white/css/white.css.map --source-map src/themes/white/css/white.min.map"
+  },
+  "dependencies": {
+    "carbon-components": "^10.20.0",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "csso-cli": "^3.0.0"
+  }
+}
