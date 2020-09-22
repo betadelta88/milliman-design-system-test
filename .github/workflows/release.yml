@@ -28,13 +28,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with:          
+        with:
+          node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@MJordanMilliman'
       - run: npm install
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
       - run: git clean -f
-      - run: npm --no-git-tag-version version from-git
+      - run: npm --no-git-tag-version version from-git --force
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
