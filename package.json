@@ -8,8 +8,8 @@
     "registry":"https://npm.pkg.github.com"
   },
   "scripts": {
-    "compile-sass": "node-sass src/themes/white/scss/index.scss src/themes/white/css/white.css --include-path node_modules/ --source-map src/themes/white/css/white.css.map",
-    "minify-css": "csso src/themes/white/css/white.css --output src/themes/white/css/white.min.css --input-source-map src/themes/white/css/white.css.map --source-map src/themes/white/css/white.min.map"
+    "compile-sass": "node-sass themes/white/scss/index.scss themes/white/css/white.css --include-path node_modules/ --source-map themes/white/css/white.css.map",
+    "minify-css": "csso themes/white/css/white.css --output themes/white/css/white.min.css --input-source-map themes/white/css/white.css.map --source-map themes/white/css/white.min.map"
   },
   "dependencies": {
     "carbon-components": "^10.20.0",
