@@ -66,8 +66,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@MJordanMilliman' 
       - run: git fetch --tags -f
-      - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"    
-      - run: npm version from-git   
+      - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
       - run: npm install
       - run: npm run compile-sass && npm run minify-css  
       - run: npm publish
