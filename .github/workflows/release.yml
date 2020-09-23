@@ -32,7 +32,8 @@ jobs:
       - name: Get Carbon Components Version
         env:
           carbon_components_version: ${{ npm view carbon-components version }}
-        run: echo "$carbon_components_version"
+        run: |
+          echo ::set-env name=carbon_components_version::$(echo npm view carbon_components version)
 
   
       - name: Create Release
