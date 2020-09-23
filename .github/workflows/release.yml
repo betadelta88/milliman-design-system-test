@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Create css files
-        run: npm run compile-sass && npm run minify-css     
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -33,9 +31,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@MJordanMilliman'     
+          scope: '@MJordanMilliman' 
       - run: git fetch --tags -f
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR" 
+      - run: npm install
       - run: npm run compile-sass && npm run minify-css       
       - run: npm version from-git     
       - run: npm publish
