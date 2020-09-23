@@ -19,7 +19,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@MJordanMilliman'
-          
+
       - name: Install Dependencies 
         run: npm install
 
@@ -28,7 +28,7 @@ jobs:
 
       - name: Zip Static Files
         run: |
-          zip -r themes.zip themes
+          zip -r themes.zip themes -x '*scss*'
 
       - name: Create Release
         id: create_release
