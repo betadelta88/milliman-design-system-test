@@ -29,6 +29,11 @@ jobs:
       - name: Zip Static Files
         run: |
           zip -r themes.zip themes -x '*scss*'
+      - name: Get Carbon Components Version
+        run: CarbonComponentsVariable=$(npm view carbon-components version)
+
+      - name: Echo Version Name
+        run: echo $CarbonComponentsVariable
 
       - name: Create Release
         id: create_release
