@@ -43,6 +43,5 @@ jobs:
       - run: npm install
       - run: npm run compile-sass && npm run minify-css  
       - run: npm publish
-      - run: npm ls carbon-components
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
