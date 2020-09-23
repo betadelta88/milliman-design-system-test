@@ -20,6 +20,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@MJordanMilliman'
       - name: Npm Version
+        run: git fetch --tags -f
         run: npm version from-git
 
       - name: Install Dependencies 
