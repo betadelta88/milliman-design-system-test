@@ -32,6 +32,7 @@ jobs:
       - name: Get Carbon Components Version
         env:
           carbon_components_version: ${{ npm view carbon-components version }}
+        run: echo "$carbon_components_version"
 
   
       - name: Create Release
@@ -53,7 +54,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./themes.zip
-          asset_name: staticFiles_carbon_components_v${{env.carbon_components_version}}.zip
+          asset_name: staticFiles_carbon_components_v${{ env.carbon_components_version }}.zip
           asset_content_type: application/zip
   publish-gpr:
     needs: create-release
