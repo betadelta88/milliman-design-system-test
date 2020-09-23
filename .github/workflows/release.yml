@@ -29,9 +29,7 @@ jobs:
       - name: Zip Static Files
         run: |
           zip -r themes.zip themes -x '*scss*'
-      - name: Get Carbon Components Version
-        env:
-          carbon_components_version: ${{ npm view carbon-components version }}
+      - name: Get Carbon Components Version  
         run: |
           echo ::set-env name=carbon_components_version::$(echo npm view carbon_components version)
 
