@@ -18,12 +18,12 @@ The carbon design system is built using SASS technology. As part of our release 
 - Static CSS
 - SCSS File 
 
-###Static CSS files: 
+### Static CSS files: 
 1. Download the latest release from either [GitHub Release](https://github.com/MJordanMilliman/milliman-design-system-test/releases) or [GitHub Package](https://github.com/MJordanMilliman/milliman-design-system-test/packages) . Include the css for the desirable theme as you would for with any other css. 
 1. Reference the CSS in your HTML file. You can find the CSS in 'themes/css'
 1. Reference the JavaScript file in your HTML file. You find the JavaScript files in 'themes/js'
 
-###SCSS File:
+### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
 `@import '@MjordanMilliman/milliman-design-system-test/themes/white/scss/index.scss';
