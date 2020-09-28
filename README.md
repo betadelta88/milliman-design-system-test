@@ -26,7 +26,7 @@ The carbon design system is built using SASS technology. As part of our release 
 ### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
-`@import '@MjordanMilliman/milliman-design-system-test/themes/white/scss/index.scss';
+`@import '@MjordanMilliman/milliman-design-system-test/themes/white/scss/index.scss';`
 
  
 Our releases are also published and hosted in GitHub Packages. 
