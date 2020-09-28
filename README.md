@@ -27,7 +27,7 @@ The carbon design system is built using SASS technology. As part of our release 
 1. Reference the CSS in your HTML file. You can find the CSS in 'themes/css'
 1. Reference the JavaScript file in your HTML file. You find the JavaScript files in 'themes/js'
 
-#### SCSS File:
+### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
 `@import '@MjordanMilliman/milliman-design-system-test/themes/scss/white/index.scss';`
