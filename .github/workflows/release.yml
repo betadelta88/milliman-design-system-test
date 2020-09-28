@@ -35,6 +35,9 @@ jobs:
       - name: Build Static Files
         run: npm run build
 
+      - name: Move Static JS Files
+        run: cp -R node_modules/carbon-components/scripts themes/js
+
       - name: Zip Static Files
         run: |
           zip -r themes.zip themes -x '*scss*'
@@ -79,6 +82,7 @@ jobs:
       - run: npm version from-git
       - run: npm install
       - run: npm run build  
+      - run: cp -R node_modules/carbon-components/scripts themes/js
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
