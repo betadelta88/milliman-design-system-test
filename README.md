@@ -12,6 +12,10 @@
 
 To get started with how the design system works, check out the [Carbon Design System documentation](https://www.carbondesignsystem.com/).
 
+## Download
+Download the latest release from either [GitHub Release](https://github.com/MJordanMilliman/milliman-design-system-test/releases) or [GitHub Package](https://github.com/MJordanMilliman/milliman-design-system-test/packages) .
+To programmatically download, please refer to the [GitHub documentation] https://docs.github.com/en/packages/publishing-and-managing-packages/installing-a-package#installing-a-package
+
 ## Installation
 The carbon design system is built using SASS technology. As part of our release process, we've provided two options to consume the Milliman theme applied to the Carbon Design System.
 
@@ -19,18 +23,14 @@ The carbon design system is built using SASS technology. As part of our release 
 - SCSS File 
 
 ### Static CSS files: 
-1. Download the latest release from either [GitHub Release](https://github.com/MJordanMilliman/milliman-design-system-test/releases) or [GitHub Package](https://github.com/MJordanMilliman/milliman-design-system-test/packages) . Include the css for the desirable theme as you would for with any other css. 
+1. Include the css for the desirable theme as you would for with any other css. 
 1. Reference the CSS in your HTML file. You can find the CSS in 'themes/css'
 1. Reference the JavaScript file in your HTML file. You find the JavaScript files in 'themes/js'
 
-### SCSS File:
+#### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
-`@import '@MjordanMilliman/milliman-design-system-test/themes/white/scss/index.scss';`
-
- 
-Our releases are also published and hosted in GitHub Packages. 
-To programmatically download, please refer to the GitHub documentation: https://docs.github.com/en/packages/publishing-and-managing-packages/installing-a-package#installing-a-package
+`@import '@MjordanMilliman/milliman-design-system-test/themes/scss/white/index.scss';`
 
 ## How To Contribute
 
