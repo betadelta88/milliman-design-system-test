@@ -43,7 +43,7 @@ The carbon design system is built using SASS technology. As part of our release 
 ### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
-`@import '@MjordanMilliman/milliman-design-system-test/themes/scss/white/index.scss';`
+`@import '@Milliman-InnerSource/milliman-design-system/themes/scss/white/index.scss';`
 
 ### Fonts
 Our design system uses two fonts, depending on the use. For code blocks, we use JetBrains Mono. For everything else, we use Open Sans, hosted by Google Fonts. To properly render the Open Sans font, please include the following in your root html file:
