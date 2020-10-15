@@ -16,16 +16,16 @@ To get started with how the design system works, check out the [Carbon Design Sy
 Download the latest release from either [GitHub Release](https://github.com/Milliman-InnerSource/milliman-design-system/releases) or [GitHub Package](https://github.com/Milliman-InnerSource/milliman-design-system/packages) .
 
 To programmatically download:
-1. Create a Personal Access Token (Profile Settings -> Developer Settings -> Generate New Token 
+1. Create a GitHub Personal Access Token (Profile Settings -> Developer Settings -> Generate New Token)
 - Please be sure that the 'read:packages' is a selected scope.
 - Enable SSO for Milliman-Innersource
-2. Add .npmrc to your package and redirect your registry:
+1. Add .npmrc to your package and redirect your registry:
 ```
 //npm.pkg.github.com/:_authToken={YOUR_PERSONAL_ACCESS_TOKEN}
 registry=https://npm.pkg.github.com/Milliman-InnerSource
 ```
 
-3. Install package @Milliman-InnerSource/milliman-design-system and carbon-components
+1. Install package @Milliman-InnerSource/milliman-design-system and carbon-components
 
 For more information on how to include this project in your CI/CD process, please refer to the [GitHub documentation] https://docs.github.com/en/packages/publishing-and-managing-packages/installing-a-package#installing-a-package
 
@@ -43,7 +43,7 @@ The carbon design system is built using SASS technology. As part of our release 
 ### SCSS File:
 The SCSS files can be found in 'themes/scss'.
 Include the following at the top of your index.scss file:
-`@import '@Milliman-InnerSource/milliman-design-system/themes/scss/white/index.scss';`
+`@import '@MjordanMilliman/milliman-design-system-test/themes/scss/white/index.scss';`
 
 ### Fonts
 Our design system uses two fonts, depending on the use. For code blocks, we use JetBrains Mono. For everything else, we use Open Sans, hosted by Google Fonts. To properly render the Open Sans font, please include the following in your root html file:
