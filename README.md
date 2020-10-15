@@ -20,9 +20,10 @@ To programmatically download:
 - Please be sure that the 'read:packages' is a selected scope.
 - Enable SSO for Milliman-Innersource
 1. Add .npmrc to your package and redirect your registry:
-
-`//npm.pkg.github.com/:_authToken={YOUR_PERSONAL_ACCESS_TOKEN}
-registry=https://npm.pkg.github.com/Milliman-InnerSource`
+```
+//npm.pkg.github.com/:_authToken={YOUR_PERSONAL_ACCESS_TOKEN}
+registry=https://npm.pkg.github.com/Milliman-InnerSource
+```
 
 1. Install package @Milliman-InnerSource/milliman-design-system and carbon-components
 
