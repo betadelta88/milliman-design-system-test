@@ -13,8 +13,18 @@
 To get started with how the design system works, check out the [Carbon Design System documentation](https://www.carbondesignsystem.com/).
 
 ## Download
-Download the latest release from either [GitHub Release](https://github.com/MJordanMilliman/milliman-design-system-test/releases) or [GitHub Package](https://github.com/MJordanMilliman/milliman-design-system-test/packages) .
-To programmatically download, please refer to the [GitHub documentation] https://docs.github.com/en/packages/publishing-and-managing-packages/installing-a-package#installing-a-package
+Download the latest release from either [GitHub Release](https://github.com/Milliman-InnerSource/milliman-design-system/releases) or [GitHub Package](https://github.com/Milliman-InnerSource/milliman-design-system/packages) .
+
+To programmatically download:
+1. Create a Personal Access Token (Profile Settings -> Developer Settings -> Generate New Token 
+- Please be sure that the 'read:packages' is a selected scope.
+- Enable SSO for Milliman-Innersource
+1. Add .npmrc to your package and redirect your registry:
+`//npm.pkg.github.com/:_authToken={YOUR_PERSONAL_ACCESS_TOKEN}
+registry=https://npm.pkg.github.com/Milliman-InnerSource`
+1. Install package @Milliman-InnerSource/milliman-design-system and carbon-components
+
+For more information on how to include this project in your CI/CD process, please refer to the [GitHub documentation] https://docs.github.com/en/packages/publishing-and-managing-packages/installing-a-package#installing-a-package
 
 ## Installation
 The carbon design system is built using SASS technology. As part of our release process, we've provided two options to consume the Milliman theme applied to the Carbon Design System.
