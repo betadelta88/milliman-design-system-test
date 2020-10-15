@@ -1,0 +1,25 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  src: local('JetBrains Mono'), 
+  url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/web/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+      url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/web/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/web/JetBrainsMono-Regular.woff') format('woff'),
+      url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+$carbon--font-families: (
+  'mono':
+    unquote(
+      "'JetBrains Mono', 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace"
+    ),
+  'sans': unquote("'Open Sans', 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif"),
+  'sans-condensed':
+    unquote("'Open Sans', 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif"),
+  'sans-hebrew':
+    unquote(
+      "'IBM Plex Sans Hebrew', 'Helvetica Hebrew', 'Arial Hebrew', sans-serif"
+    ),
+  'serif': unquote("'IBM Plex Serif', 'Georgia', Times, serif"),
+) !default;
